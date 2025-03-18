@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Drive Test</title>
+        <link rel="icon" type="image/x-icon" href="public/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <%- include('layouts/navbar'); -%>
+
+        <!-- Page Header-->
+        <%- include('layouts/header'); -%>
+
+        <!-- Main Content-->
+        <div class="form-container">
+            <h2>G2 Test Registration</h2>
+            <form id="g2-form" action="/users/store" method="POST">
+                <label>First Name</label>
+                <input type="text" name="firstName" required>
+        
+                <label>Last Name</label>
+                <input type="text" name="lastName" required>
+        
+                <label>License Number (8 characters)</label>
+                <input type="text" name="licenceNumber" maxlength="8" required>
+        
+                <label>Age</label>
+                <input type="number" name="age" required>
+        
+                <h4>Car Information</h4>
+                <label>Make</label>
+                <input type="text" name="make" required>
+        
+                <label>Model</label>
+                <input type="text" name="model" required>
+        
+                <label>Year</label>
+                <input type="number" name="year" required>
+        
+                <label>Plate Number</label>
+                <input type="text" name="plateNumber" required>
+        
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+        
+        <!-- Footer-->
+        <%- include('layouts/footer'); -%>
+
+        <!-- Scripts-->
+        <%- include('layouts/scripts'); -%>
+    </body>
+</html>
