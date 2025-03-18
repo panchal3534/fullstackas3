@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>G2 Test</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DriveTest</h1>
+        <h2>G2 Test</h2>
+        <form action="/g2-page" method="POST">
+            <input type="text" name="firstname" placeholder="First Name" value="<%= user.firstname %>">
+            <input type="text" name="lastname" placeholder="Last Name" value="<%= user.lastname %>">
+            <input type="text" name="licenseNo" placeholder="License Number" value="<%= user.licenseNo %>">
+            <input type="number" name="age" placeholder="Age" value="<%= user.age %>">
+            <input type="text" name="make" placeholder="Car Make" value="<%= user.car_details.make %>">
+            <input type="text" name="model" placeholder="Car Model" value="<%= user.car_details.model %>">
+            <input type="number" name="year" placeholder="Car Year" value="<%= user.car_details.year %>">
+            <input type="text" name="platno" placeholder="Plate Number" value="<%= user.car_details.platno %>">
+            <button type="submit">Submit</button>
+        </form>
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>G Test</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DriveTest</h1>
+        <h2>G Test</h2>
+        <div class="user-details">
+            <p>First Name: <%= user.firstname %></p>
+            <p>Last Name: <%= user.lastname %></p>
+            <p>License Number: <%= user.licenseNo %></p>
+            <p>Age: <%= user.age %></p>
+            <p>Car Make: <%= user.car_details.make %></p>
+            <p>Car Model: <%= user.car_details.model %></p>
+            <p>Car Year: <%= user.car_details.year %></p>
+            <p>Plate Number: <%= user.car_details.platno %></p>
+        </div>
+        <a href="/dashboard">Back to Dashboard</a>
+    </div>
+</body>
+</html>
